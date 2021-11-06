@@ -3,14 +3,16 @@
 $ip = $_SERVER['REMOTE_ADDR'];
 echo "request IP: ".$ip;
 
-$contents = file_get_contents("https://ipinfo.io/18.184.45.226/json");
+$contents = file_get_contents("https://ipinfo.io/".$ip."/json");
 $res = json_decode($contents, true);
 $country = $res["country"];
 
 if ($country == "SK") {
-    echo "<br>Setup Slovak language";
+    echo "Setup Slovak language";
+} else if ($country == "DE"){
+    echo "Setup German language";
 } else {
-    echo "<br>Setup English language";
+    echo "Setup English language";
 }
 
 ?>
