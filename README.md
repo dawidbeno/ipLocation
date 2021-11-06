@@ -1,5 +1,5 @@
 # Get country from IP address
-Recently I was creating web page which had localization for three different languages. I needed to find out the country from which a user requested my page. based on the country I wanted to setup localization. English was default setting but in cases request was from Germany, localization should have been set to German. Other case was Slovak language in case request was send from Slovakia.
+Recently I was creating web page which had localization for three different languages. I needed to find out the country from which a user requested my page. Based on the country I wanted to setup localization. English was default setting but in cases request was from Germany, localization should have been set to German. Other case was Slovak language in case request was send from Slovakia.
   
 ## ipinfo.io API
 There are no ranges for IP addresses for each country. Country in which is particular IP address assigned, could change. So we have to rely on services which has access to database with metadata for particular IP. There are several servers, but I have used [ipinfo.io](ipinfo.io)
